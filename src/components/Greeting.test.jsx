@@ -6,10 +6,10 @@ import Greeting from './Greeting';
 
 test('renders greeting with provided name', () => {
   render(<Greeting name="Test User" />);
-  expect(screen.getByText('Hi , Test User!')).toBeInTheDocument();
+  expect(screen.getByText('Hello , Test User!')).toBeInTheDocument();
 });
 
 test('renders greeting with default name if no name is provided', () => {
   render(<Greeting />);
-  expect(screen.getByText('Hi , Guest!')).toBeInTheDocument();
+  expect(screen.getByText('Hello , Guest!')).toBeInTheDocument();
 });
