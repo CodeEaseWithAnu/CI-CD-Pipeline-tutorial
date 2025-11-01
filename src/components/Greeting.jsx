@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Greeting({ name }) {
-  return <p>Hello welcome , {name || 'Guest'}!</p>;
+  return <p>Hello , {name || 'Guest'}!</p>;
 }
 
 export default Greeting;
